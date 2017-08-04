@@ -1,0 +1,24 @@
+{
+  "name": "eslint-plugin-bkpr",
+  "version": "0.1.0",
+  "description": "A set of custom ESLint rules needed by Beekeeper AG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin"
+  ],
+  "author": "Florian Dreschner <florian@beekeeper.io> (https://beekeeper.io)",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">3"
+  },
+  "dependencies": {
+    "debug": "^2.6.8"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
