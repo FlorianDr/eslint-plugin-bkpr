@@ -15,6 +15,7 @@ ruleTester.run('no-unknown-translation', rule, {
   }],
   invalid: [{
     code: '_(\'test\')',
-    options: ['', '_', ['search']]
+    options: ['', '_', ['search']],
+    errors: [{ message: 'Translation key is not defined: test', type: 'Literal'}]
   }]
 });
