@@ -12,10 +12,20 @@ ruleTester.run('no-unknown-translation', rule, {
     }, {
       code: '_(\'search\')',
       options: ['', '_', ['search']]
+    }, {
+      code: '_(somevar)',
+      options: ['', '_', ['search']]
+    }, {
+      code: 'mysicktranslationtool.translatitbitch(\'what string is it\')',
+      options: ['', 'translatitbitch', ['search']]
   }],
   invalid: [{
     code: '_(\'test\')',
     options: ['', '_', ['search']],
     errors: [{ message: 'Translation key is not defined: test', type: 'Literal'}]
+  }, {
+    code: '_(\'ilikelongstringsandIcannotlie\')',
+    options: ['', '_', []],
+    errors: [{ message: 'Translation key is not defined: ilikelongstringsandIcannotlie', type: 'Literal'}]
   }]
 });
