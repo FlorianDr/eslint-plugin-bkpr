@@ -13,11 +13,11 @@
   "author": "Florian Dreschner <florian@beekeeper.io> (https://beekeeper.io)",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">3"
+    "eslint": ">= 3"
   },
   "dependencies": {},
   "engines": {
-    "node": ">=6"
+    "node": ">= 6"
   },
   "devDependencies": {
     "eslint": "^4.3.0",
