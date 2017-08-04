@@ -15,9 +15,7 @@
   "peerDependencies": {
     "eslint": ">3"
   },
-  "dependencies": {
-    "debug": "^2.6.8"
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=6"
   }
